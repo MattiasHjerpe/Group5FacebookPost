@@ -127,7 +127,8 @@ public class Main {
             logger.error(e.getMessage());
         }
         Thread.sleep(4000);
-
+        
+        // Verifies that the expected text was posted
         WebElement post = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div/div[3]/div/div/div/div[1]/div[1]/div/div[2]/div/div/div/div[3]/div/div[3]/div/div/div[1]/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div[3]/div/div/div/div"));
         String postContent = post.getText();
 
